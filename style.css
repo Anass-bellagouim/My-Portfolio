@@ -15,6 +15,7 @@
   --second-bg-color: #112e42;
   --text-color: #ededed;
   --main-color: #00abf0;
+
 }
 
 html {
@@ -209,10 +210,12 @@ body {
   z-index: 1;
   overflow: hidden;
   transition: 0.5s;
+  box-shadow: 0 0 10px var(--main-color);
 }
 
 .btn-box a:hover {
   color: var(--main-color);
+  box-shadow: none;
 }
 
 .btn-box a:nth-child(2) {
@@ -282,10 +285,13 @@ body {
   z-index: 1;
   overflow: hidden;
   transition: 0.5s;
+  box-shadow: 0 0 10px var(--main-color);
+
 }
 
 .home-sci a:hover {
   color: #081b29;
+  box-shadow: none;
 }
 
 .home-sci a::before {
@@ -748,6 +754,8 @@ span {
   border-radius: 0.6rem;
   z-index: 1;
   overflow: hidden;
+  box-shadow: 0 0 10px var(--main-color);
+
 }
 
 .footer-iconTop a::before {
@@ -773,16 +781,15 @@ span {
 }
 
 .footer-iconTop a:hover i {
-  color: var(--main-color);
-}
+  color: var(--main-color);}
 
 form button {
   padding: 12px 32px;
-  background: #0ef;
+  background: var(--main-color);
   border: none;
   outline: none;
   border-radius: 6px;
-  box-shadow: 0 0 10px #0ef;
+  box-shadow: 0 0 10px var(--main-color);
   font-size: 16px;
   color: #1f242d;
   letter-spacing: 1px;
@@ -844,9 +851,18 @@ form button:hover {
   .btn-box.btns {
     padding-right: 150px;
   }
+  .contact .heading{
+    padding-top: 5px;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 930px){
+  .home{
+    background: none;
+  }
+}
+
+@media (max-width: 700px) {
   .header {
     background: var(--bg-color);
   }
@@ -905,10 +921,14 @@ form button:hover {
     transition-delay: 0.2s;
   }
 
-  .home-imgHover {
-    pointer-events: none;
-    background: var(--bg-color);
-    opacity: 0.6;
+  .home-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .home-content h1 {
+    font-size: 5rem;
   }
   .btn-box.btns {
     padding-right: 150px;
@@ -925,6 +945,15 @@ form button:hover {
     margin-left: 25px;
     margin-right: 25px;
   }
+  .home{
+    background: none;
+  }
+  .home-sci{
+  padding-left: 150px;
+  }
+  .contact .heading{
+    padding-top: 5px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -932,9 +961,14 @@ form button:hover {
     font-size: 50%;
   }
 
-  .home-content h1 {
+  .home-content {
     display: flex;
+    align-items: center;
     flex-direction: column;
+    text-align: center;
+  }
+  .home-content h1 {
+    font-size: 5rem;
   }
 
   .home-sci {
@@ -957,11 +991,26 @@ form button:hover {
     margin-left: 20px;
     margin-right: 20px;
   }
+  .home{
+    background: none;
+  }
+  .home-sci{
+    padding-left: 90px;
+    }
+    .contact .heading{
+      padding-top: 60px;
+    }
 }
 
 @media (max-width: 462px) {
+  .home-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
   .home-content h1 {
-    font-size: 5.2rem;
+    font-size: 5rem;
   }
 
   .education {
@@ -995,6 +1044,15 @@ form button:hover {
     margin-left: 15px;
     margin-right: 15px;
   }
+  .home{
+    background: none;
+  }
+  .home-sci{
+    padding-left: 30px;
+    }
+    .contact {
+     padding-top: 20px;
+    }
 }
 
 @media (max-width: 371px) {
@@ -1035,6 +1093,12 @@ form button:hover {
     margin-left: 10px;
     margin-right: 10px;
   }
+  .home{
+    background: none;
+  }
+  .contact {
+    padding-top: 50px;
+   }
 }
 
 /* KEYFRAMES ANIMATION */
