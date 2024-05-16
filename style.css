@@ -27,12 +27,6 @@ body {
   color: var(--text-color);
 }
 
-
-
-
-
-
-
 /* Here we add the section of Navbar */
 .header {
   position: fixed;
@@ -72,7 +66,7 @@ body {
   animation-delay: 0.4s;
 }
 
-.navbar{
+.navbar {
   position: relative;
 }
 
@@ -97,14 +91,6 @@ body {
   cursor: pointer;
   display: none;
 }
-
-
-
-
-
-
-
-
 
 /* Here i add my personal information and a paragraf summarizing my experience */
 .home {
@@ -153,9 +139,9 @@ body {
   animation-delay: 1.3s;
 }
 
-.home-content h3{
+.home-content h3 {
   color: transparent;
-  -webkit-text-stroke: .7px var(--main-color);
+  -webkit-text-stroke: 0.7px var(--main-color);
   font-size: 32px;
   font-weight: 700;
   background-image: linear-gradient(var(--main-color), var(--main-color));
@@ -182,14 +168,6 @@ body {
   animation: showRight 1s ease forwards;
   animation-delay: 1.6s;
 }
-
-
-
-
-
-
-
-
 
 /* Here we add two buttons, first for Hire me second for Talk me */
 .home-content .btn-box {
@@ -265,14 +243,6 @@ body {
 .btn-box a:hover::before {
   width: 100%;
 }
-
-
-
-
-
-
-
-
 
 /* Here we add social media sites */
 .home-sci {
@@ -377,12 +347,6 @@ body {
   }
 }
 
-
-
-
-
-
-
 /* Here about section design */
 .about {
   display: flex;
@@ -458,13 +422,6 @@ span {
 .btn-box.btns a::before {
   background: var(--second-bg-color);
 }
-
-
-
-
-
-
-
 
 /* here we add education section design */
 .education {
@@ -559,12 +516,6 @@ span {
   font-size: 1.6rem;
   padding-top: 0.5rem;
 }
-
-
-
-
-
-
 
 /* here we add skills section desing */
 .skills {
@@ -683,13 +634,6 @@ span {
   padding-top: 150px;
 }
 
-
-
-
-
-
-
-
 /* here we add contact section desing */
 .contact {
   min-height: auto;
@@ -780,15 +724,6 @@ span {
   color: white;
 }
 
-
-
-
-
-
-
-
-
-
 /* here we add footer desing */
 .footer {
   display: flex;
@@ -854,26 +789,21 @@ form button {
   font-weight: 600;
   cursor: pointer;
   margin-top: 20px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-form button:hover{
-    box-shadow: none;
+form button:hover {
+  box-shadow: none;
 }
-
-
-
-
-
 
 /* ANIMATION RELOAD AND SCROLL */
-.animate{
+.animate {
   position: absolute;
   top: 0;
   right: 0;
   width: 100%;
   height: 100%;
-  background:var(--bg-color);
+  background: var(--bg-color);
   z-index: 98;
 }
 
@@ -882,22 +812,15 @@ form button:hover{
 #menu-icon .animate,
 .home-sci {
   animation: showRight 1s ease forwards;
-  animation-delay: calc(.3s * var(--i));
+  animation-delay: calc(0.3s * var(--i));
 }
-
-
-
-
-
-
-
 
 /* BREAKPOINTS */
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
   }
-  .btn-box.btns{
+  .btn-box.btns {
     padding-right: 150px;
   }
 }
@@ -918,7 +841,7 @@ form button:hover{
   .footer {
     padding: 2rem 4%;
   }
-  .btn-box.btns{
+  .btn-box.btns {
     padding-right: 150px;
   }
 }
@@ -959,13 +882,13 @@ form button:hover{
     background: var(--bg-color);
     border: 0.1rem solid rgba(0, 0, 0, 0.2);
     z-index: -1;
-    transition: 0.20s ease;
+    transition: 0.2s ease;
     transition-delay: 0s;
   }
 
   .navbar.active .active-nav {
     left: 0;
-    transition-delay: 0.20s;
+    transition-delay: 0.2s;
   }
 
   .navbar a {
@@ -973,39 +896,43 @@ form button:hover{
     font-size: 2rem;
     margin: 3rem 0;
     transform: translateX(-20rem);
-    transition: .25s ease;
+    transition: 0.25s ease;
     transition-delay: 0s;
   }
 
-  .navbar.active a{
+  .navbar.active a {
     transform: translateX(0);
-    transition-delay: .20s;
+    transition-delay: 0.2s;
   }
 
-  .home-imgHover{
+  .home-imgHover {
     pointer-events: none;
     background: var(--bg-color);
-    opacity: .6;
+    opacity: 0.6;
   }
-  .btn-box.btns{
+  .btn-box.btns {
     padding-right: 150px;
   }
-  .skills-column{
+  .skills-column {
     margin-left: 25px;
     margin-right: 25px;
   }
-  .education-column{
+  .education-column {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .about-content p {
     margin-left: 25px;
     margin-right: 25px;
   }
 }
 
-@media (max-width:520px){
-  html{
+@media (max-width: 520px) {
+  html {
     font-size: 50%;
   }
 
-  .home-content h1{
+  .home-content h1 {
     display: flex;
     flex-direction: column;
   }
@@ -1014,97 +941,104 @@ form button:hover{
     width: 38px;
     height: 38px;
   }
-  .btn-box.btns{
+  .btn-box.btns {
     padding-right: 150px;
   }
-  
-  .skills-column{
+
+  .skills-column {
     margin-left: 20px;
     margin-right: 20px;
   }
-  .education-column{
+  .education-column {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .about-content p {
     margin-left: 20px;
     margin-right: 20px;
   }
 }
 
-@media (max-width:462px){
-  .home-content h1{
+@media (max-width: 462px) {
+  .home-content h1 {
     font-size: 5.2rem;
   }
 
-  .education{
+  .education {
     padding: 10rem 4% 5rem 5%;
   }
 
-  .contact form .input-box .input-field{
+  .contact form .input-box .input-field {
     width: 100%;
   }
 
-  .footer{
+  .footer {
     flex-direction: column-reverse;
   }
 
-  .footer p{
+  .footer p {
     margin-top: 2rem;
     text-align: center;
   }
-  .btn-box.btns{
+  .btn-box.btns {
     padding-right: 150px;
   }
-  .skills-column{
+  .skills-column {
     margin-left: 15px;
     margin-right: 15px;
   }
-  .education-column{
+  .education-column {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .about-content p {
     margin-left: 15px;
     margin-right: 15px;
   }
 }
 
-@media(max-width:371px){
-  .home-content{
+@media (max-width: 371px) {
+  .home-content {
     justify-content: center;
   }
 
-  .btn-box{
+  .btn-box {
     justify-content: center;
   }
 
-  .home-sci{
+  .home-sci {
     padding-left: 15px;
   }
 
-  .home-content{
+  .home-content {
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
   }
 
-  .home-content h1{
+  .home-content h1 {
     font-size: 5rem;
   }
-  .btn-box.btns{
+  .btn-box.btns {
     padding-right: 150px;
   }
-  .skills-column{
+  .skills-column {
     margin-left: 10px;
     margin-right: 10px;
   }
-  .education-column{
+  .education-column {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .about-content p {
     margin-left: 10px;
     margin-right: 10px;
   }
 }
 
-
-
-
-
-
 /* KEYFRAMES ANIMATION */
-@keyframes homeBgText{
+@keyframes homeBgText {
   0%,
   10%,
   100% {
